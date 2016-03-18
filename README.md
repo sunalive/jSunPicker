@@ -19,6 +19,7 @@ jSunPicker has the following features:
 * Customizable Title strings (multi-language support)
 * Customizable Start day (Monday can be your first day of the week)
 * Inline calendar or trigger from text field or custom icon
+* 9 gorgeous themes
 
 ## Dependencies
 * [jQuery 1.8+](http://jquery.com/download/) 
