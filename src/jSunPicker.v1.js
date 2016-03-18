@@ -266,7 +266,8 @@
 		// Build Title Button
         renderTitle: function (title, curView){
             var curNav = "";
-            (this.options.pickerType != 'datetime') ? curView = this.options.pickerType : curNav = this.selectedDate || (this.currentYear+"/01/01");
+            (['datetime','date'].indexOf(this.options.pickerType)==-1) ? curView = this.options.pickerType : curNav = this.selectedDate || (this.currentYear+"/01/01");
+//            (this.options.pickerType != 'datetime') ? curView = this.options.pickerType : curNav = this.selectedDate || (this.currentYear+"/01/01");
             var button = "<div class='title titleButton' data-nav = '" + curNav + "' data-view = '" + curView + "'> " + title + " </div>" +
                           "<div class='fav favButton' data-nav = '" + this.defaultValue + "' data-view = '" + curView + "'> &hearts; </div>";
             return button;
