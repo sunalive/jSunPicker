@@ -1,35 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>jSunPicker by sunalive</title>
+    <meta name="description" content="jSunPicker : A simplified jQuery date and time picker">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>jSunPicker</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="header">jSunPicker</h1>
-        <p class="header">A simplified jQuery date and time picker</p>
 
-        <ul>
-          <li class="download"><a class="buttons" href="https://github.com/sunalive/jSunPicker/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/sunalive/jSunPicker/tarball/master">Download TAR</a></li>
-          <li><a class="buttons github" href="https://github.com/sunalive/jSunPicker">View On GitHub</a></li>
-        </ul>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/sunalive/jSunPicker">View on GitHub</a>
 
-        <p class="header">This project is maintained by <a class="header name" href="https://github.com/sunalive">sunalive</a></p>
+          <h1 id="project_title">jSunPicker</h1>
+          <h2 id="project_tagline">A simplified jQuery date and time picker</h2>
 
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/sunalive/jSunPicker/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/sunalive/jSunPicker/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
 
-      </header>
-      <section>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
         <h2>
 <a id="why-another-date-picker" class="anchor" href="#why-another-date-picker" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Why another Date picker?</h2>
 
@@ -104,45 +105,45 @@
 
 <ul>
 <li>
-<code>y -</code> two digit year</li>
+<code>y</code> - two digit year</li>
 <li>
-<code>Y -</code> four digit year</li>
+<code>Y</code> - four digit year</li>
 <li>
-<code>m -</code> month number without leading zero</li>
+<code>m</code> - month number without leading zero</li>
 <li>
-<code>M -</code> month number with leading zero</li>
+<code>M</code> - month number with leading zero</li>
 <li>
-<code>t -</code> month short text</li>
+<code>t</code> - month short text</li>
 <li>
-<code>T -</code> month long text</li>
+<code>T</code> - month long text</li>
 <li>
-<code>d -</code> date number without leading zero</li>
+<code>d</code> - date number without leading zero</li>
 <li>
-<code>D -</code> date number with leading zero </li>
+<code>D</code> - date number with leading zero </li>
 <li>
-<code>h -</code> hours without leading zero</li>
+<code>h</code> - hours without leading zero</li>
 <li>
-<code>H -</code> hours with leading zero</li>
+<code>H</code> - hours with leading zero</li>
 <li>
-<code>a -</code> meridian (am/pm)</li>
+<code>a</code> - meridian (am/pm)</li>
 <li>
-<code>A -</code> meridian (AM?PM)</li>
+<code>A</code> - meridian (AM?PM)</li>
 <li>
-<code>n -</code> minutes without leading zero</li>
+<code>n</code> - minutes without leading zero</li>
 <li>
-<code>N -</code> minutes with leading zero</li>
+<code>N</code> - minutes with leading zero</li>
 <li>
-<code>s -</code> seconds without leading zero</li>
+<code>s</code> - seconds without leading zero</li>
 <li>
-<code>S -</code> seconds with leading zero</li>
+<code>S</code> - seconds with leading zero</li>
 <li>
-<code>w -</code> day of the week short (dayShort)</li>
+<code>w</code> - day of the week short (dayShort)</li>
 <li>
-<code>W -</code> day of the week long</li>
+<code>W</code> - day of the week long</li>
 <li>
-<code>U -</code> unix time </li>
+<code>U</code> - unix time </li>
 <li>
-<code>X -</code> military time</li>
+<code>X</code> - military time</li>
 </ul>
 
 <p><strong>Format example</strong></p>
@@ -175,15 +176,15 @@
 </tr>
 <tr>
 <td><strong>daysTitle</strong></td>
-<td>Array of day names (long text)</td>
+<td>Days of the week (long text)</td>
 <td><code>daysTitle:['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']</code></td>
-<td>['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']`</td>
+<td>English days (Sunday to Saturday)</td>
 </tr>
 <tr>
 <td><strong>monthsTitle</strong></td>
-<td>Array of month names (long text)</td>
+<td>Months of the year (long text)</td>
 <td><code>monthsTitle:['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']</code></td>
-<td><code>['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']</code></td>
+<td>English months (January to December)</td>
 </tr>
 <tr>
 <td><strong>dayShort</strong></td>
@@ -232,7 +233,7 @@
 <td><strong>outputFormat</strong></td>
 <td>Date format for form submit. See the formats section above</td>
 <td><code>outputFormat:'D-M-Y'</code></td>
-<td>'U')</td>
+<td>'U'</td>
 </tr>
 <tr>
 <td><strong>minDate</strong></td>
@@ -321,11 +322,17 @@
 
 <p>Submit a bug if you find any. Fork or create a pull request if you wish to contribute.  Source code is heavily commented for your understanding.</p>
       </section>
-      <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">jSunPicker maintained by <a href="https://github.com/sunalive">sunalive</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		
+
+    
+
   </body>
 </html>
