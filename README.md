@@ -45,7 +45,7 @@ Semantic declaration (as selector's `data-` attributes)
     $('#datepicker').jSunPicker();
 
 
-For detailed information visit the Project page below. 
+For detailed information and demo, visit the Project page below. 
 
 ## Project Page
 [jSunPicker @Github](http://sunalive.github.io/jSunPicker/)
