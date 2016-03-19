@@ -54,7 +54,7 @@ For detailed information visit the Project page below.
 Heavily inspired by [Will_pickdate() by TazSingh](http://tazsingh.github.io/will_pickdate/). Thanks TazSingh [@tazsingh](https://www.github.com/tazsingh/). I have been using that for more than a year but it has some serious bugs with min-max date restrictions. This has not been updated for a while and I also thought that the code could be lot simpler. So I borrowed the visual and navigation design (it was so beautiful) from that project and wrote my plugin from scratch.
 
 ## Authors and Contributors
-[Ravi Iyer @sunalive](https://www.github.com/sunalive/). Fork or create a pull request if you wish to contribute.  Source code is heavily commented for your understanding.  
+Ravi Iyer [@sunalive](https://www.github.com/sunalive/). Fork or create a pull request if you wish to contribute.  Source code is heavily commented for your understanding.  
 
 ## License
 [MIT License](https://tldrlegal.com/license/mit-license). Do whatever you wish.
