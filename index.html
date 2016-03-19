@@ -236,33 +236,29 @@
 </tr>
 <tr>
 <td><strong>minDate</strong></td>
-<td>Minimum available date for selection. All dates before this date will be disabled. '[date-string]' in any text format except date first i.e. not like d-m-y or d/mmm/yyyy</td>
-<td>
-<code>minDate:'09/25/2014 05:12:23 PM' |</code>null`</td>
+<td>Minimum available date for selection. All dates before this date will be disabled. '[date-string]' in any text format except date first i.e. not like d-m-y or d/mmm/yyyy<code>|</code>minDate:'09/25/2014 05:12:23 PM'</td>
+<td><code>null</code></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>maxDate</strong></td>
 <td>Maximum available date for selection. All dates after this date will be disabled. Formats same as <code>minDate</code>
 </td>
-<td>
-<code>maxDate:'2014-09-25 18:34:59' |</code>null`</td>
-<td></td>
+<td><code>maxDate:'2014-09-25 18:34:59'</code></td>
+<td><code>null</code></td>
 </tr>
 <tr>
 <td><strong>minTime</strong></td>
 <td>Minimum available time for selection. All times before this time will be invalid. '[time-string]' in any text format</td>
-<td>
-<code>minTime:'4:23:45 AM' |</code>null`</td>
-<td></td>
+<td><code>minTime:'4:23:45 AM'</code></td>
+<td><code>null</code></td>
 </tr>
 <tr>
 <td><strong>maxTime</strong></td>
 <td>Maximum available time for selection. All times after this time will be invalid. Format same as <code>minTime</code>
 </td>
-<td>
-<code>minTime:'4:23:45 PM' |</code>null`</td>
-<td></td>
+<td><code>minTime:'4:23:45 PM'</code></td>
+<td><code>null</code></td>
 </tr>
 <tr>
 <td><strong>disabledDays</strong></td>
@@ -279,16 +275,29 @@
 <tr>
 <td><strong>initialDate</strong></td>
 <td>Initial selected date. This date will be selected in the element and the picker by default</td>
-<td>
-<code>initialDate:'2016/3/14 12:21:23 PM' |</code>null`</td>
-<td></td>
+<td><code>initialDate:'2016/3/14 12:21:23 PM'</code></td>
+<td><code>null</code></td>
+</tr>
+<tr>
+<td><strong>onShow</strong></td>
+<td>Trigger a JS function when picker shows up</td>
+<td><code>onShow:$.noop</code></td>
+<td><code>$.noop</code></td>
+</tr>
+<tr>
+<td><strong>onClose</strong></td>
+<td>Trigger a JS function when picker is closed (destroyed)</td>
+<td><code>onClose:$.noop</code></td>
+<td><code>$.noop</code></td>
+</tr>
+<tr>
+<td><strong>onSelect</strong></td>
+<td>Trigger a JS function when a value is selected in the picker</td>
+<td><code>onSelect:$.noop</code></td>
+<td><code>$.noop</code></td>
 </tr>
 </tbody>
 </table>
-
-<p><strong>onShow</strong> | Trigger a JS function when picker shows up | <code>onShow:$.noop</code> | <code>$.noop</code>
-<strong>onClose</strong> | Trigger a JS function when picker is closed (destroyed) | <code>onClose:$.noop</code> | <code>$.noop</code> 
-<strong>onSelect</strong> | Trigger a JS function when a value is selected in the picker | <code>onSelect:$.noop</code> | <code>$.noop</code></p>
 
 <p>-- More usage examples will be created <a href="examples.html">here</a> later -- </p>
 
