@@ -45,19 +45,19 @@ Semantic declaration (as selector's `data-` attributes)
     $('#datepicker').jSunPicker();
 
 
--- More usage examples will be created later -- 
+For detailed information visit the Project page below. 
 
-## Info Page
+## Project Page
 [jSunPicker @Github](http://sunalive.github.io/jSunPicker/)
 
 ## Inspiration
 Heavily inspired by [Will_pickdate() by TazSingh (@tazsingh)](http://tazsingh.github.io/will_pickdate/). Thanks TazSingh. I have been using that for more than a year but it has some serious bugs with min-max date restrictions. This has not been updated for a while and I also thought that the code could be lot simpler. So I borrowed the visual and navigation design (it was so beautiful) from that project and wrote my plugin from scratch.
 
 ## Authors and Contributors
-Ravi Iyer [@sunalive](https://www.github.com/sunalive/)
+Ravi Iyer [@sunalive](https://www.github.com/sunalive/). Fork or create a pull request if you wish to contribute.  Source code is heavily commented for your understanding.  
 
 ## License
 [MIT License](https://tldrlegal.com/license/mit-license). Do whatever you wish.
 
 ## Support or Contact
-Submit a bug if you find any. Fork or create a pull request if you wish to contribute.  Source code is heavily commented for your understanding.
+Submit a bug if you find any. I will fix them whenever possible, no time commitment. Feel free to create a pull request if you can help fix any. 
