@@ -134,13 +134,13 @@
 <li>
 <code>s -</code> seconds without leading zero</li>
 <li>
-<code>U -</code> unix time </li>
-<li>
 <code>S -</code> seconds with leading zero</li>
 <li>
 <code>w -</code> day of the week short (dayShort)</li>
 <li>
 <code>W -</code> day of the week long</li>
+<li>
+<code>U -</code> unix time </li>
 <li>
 <code>X -</code> military time</li>
 </ul>
@@ -154,7 +154,143 @@
 <code>'d-m-Y'</code>    translates to: 9-2-1975</li>
 </ul>
 
-<p>-- More usage examples will be created later -- </p>
+<h3>
+<a id="plugin-options" class="anchor" href="#plugin-options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Plugin Options</h3>
+
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Example</th>
+<th>Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>language</strong></td>
+<td>Should denote the language used. Placeholder for future development, not used as of now</td>
+<td><code>language:'en-US'</code></td>
+<td><code>en-US</code></td>
+</tr>
+<tr>
+<td><strong>daysTitle</strong></td>
+<td>Array of day names (long text)</td>
+<td><code>daysTitle:['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']</code></td>
+<td>['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']`</td>
+</tr>
+<tr>
+<td><strong>monthsTitle</strong></td>
+<td>Array of month names (long text)</td>
+<td><code>monthsTitle:['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']</code></td>
+<td><code>['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']</code></td>
+</tr>
+<tr>
+<td><strong>dayShort</strong></td>
+<td>Number of characters from the start of daysTitle for short day names</td>
+<td><code>dayShort:2</code></td>
+<td><code>2</code></td>
+</tr>
+<tr>
+<td><strong>monthShort</strong></td>
+<td>Number of characters from the start of monthsTitle for short month names</td>
+<td><code>monthShort:3</code></td>
+<td><code>3</code></td>
+</tr>
+<tr>
+<td><strong>showIcon</strong></td>
+<td>
+<code>path/to/calendar/icon</code>, to trigger picker on clicking the icon instead of input element</td>
+<td><code>showIcon:path/to/icon/</code></td>
+<td><code>null</code></td>
+</tr>
+<tr>
+<td><strong>inline</strong></td>
+<td>jQuery selector for the inline container, be sure to give a unique one. This will make it an inline calendar instead of popup calendar</td>
+<td><code>inline:'#element-id'</code></td>
+<td><code>null</code></td>
+</tr>
+<tr>
+<td><strong>startDay</strong></td>
+<td>Start day of the week, Sunday = 1, Saturday = 7</td>
+<td><code>startDay:1</code></td>
+<td><code>1</code></td>
+</tr>
+<tr>
+<td><strong>pickerType</strong></td>
+<td>Denotes the picker type. <em><strong>Available types:</strong></em> <code>datetime</code> (date + month + year + time), <code>date</code>, <code>month</code>, <code>year</code>, <code>time</code>. Set the appropriate formats for below options</td>
+<td><code>pickerType:'date'</code></td>
+<td><code>datetime</code></td>
+</tr>
+<tr>
+<td><strong>displayFormat</strong></td>
+<td>Date format for visual display. See the formats section above</td>
+<td><code>displayFormat:'W, T d, Y H:N:S A'</code></td>
+<td><code>'Y/m/d h:m:s'</code></td>
+</tr>
+<tr>
+<td><strong>outputFormat</strong></td>
+<td>Date format for form submit. See the formats section above</td>
+<td><code>outputFormat:'D-M-Y'</code></td>
+<td>'U')</td>
+</tr>
+<tr>
+<td><strong>minDate</strong></td>
+<td>Minimum available date for selection. All dates before this date will be disabled. '[date-string]' in any text format except date first i.e. not like d-m-y or d/mmm/yyyy</td>
+<td>
+<code>minDate:'09/25/2014 05:12:23 PM' |</code>null`</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>maxDate</strong></td>
+<td>Maximum available date for selection. All dates after this date will be disabled. Formats same as <code>minDate</code>
+</td>
+<td>
+<code>maxDate:'2014-09-25 18:34:59' |</code>null`</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>minTime</strong></td>
+<td>Minimum available time for selection. All times before this time will be invalid. '[time-string]' in any text format</td>
+<td>
+<code>minTime:'4:23:45 AM' |</code>null`</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>maxTime</strong></td>
+<td>Maximum available time for selection. All times after this time will be invalid. Format same as <code>minTime</code>
+</td>
+<td>
+<code>minTime:'4:23:45 PM' |</code>null`</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>disabledDays</strong></td>
+<td>Days disabled from selection. Similar to <code>startDay</code> (Sun = 1, Sat = 7) separated by commas</td>
+<td><code>disabledDays:'1,7'</code></td>
+<td><code>null</code></td>
+</tr>
+<tr>
+<td><strong>disabledDates</strong></td>
+<td>Days disabled from selection. Individual dates or date ranges separated by commas. Range dates separated by hyphens</td>
+<td><code>disabledDates:'2016/03/05,2016/03/10-2016/03/15'</code></td>
+<td><code>null</code></td>
+</tr>
+<tr>
+<td><strong>initialDate</strong></td>
+<td>Initial selected date. This date will be selected in the element and the picker by default</td>
+<td>
+<code>initialDate:'2016/3/14 12:21:23 PM' |</code>null`</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>onShow</strong> | Trigger a JS function when picker shows up | <code>onShow:$.noop</code> | <code>$.noop</code>
+<strong>onClose</strong> | Trigger a JS function when picker is closed (destroyed) | <code>onClose:$.noop</code> | <code>$.noop</code> 
+<strong>onSelect</strong> | Trigger a JS function when a value is selected in the picker | <code>onSelect:$.noop</code> | <code>$.noop</code></p>
+
+<p>-- More usage examples will be created <a href="examples.html">here</a> later -- </p>
 
 <h2>
 <a id="inspiration" class="anchor" href="#inspiration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Inspiration</h2>
