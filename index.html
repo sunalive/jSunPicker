@@ -95,6 +95,59 @@
 <pre><code>$('#datepicker').jSunPicker();
 </code></pre>
 
+<h3>
+<a id="format-variables" class="anchor" href="#format-variables" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Format variables</h3>
+
+<p>This plugin uses specific variables to standardize input and output.  It's a small inconvenience for developers who are used to PHP date formats but keeping this way saves a lot of unnecessary code just to manage format conversions which, in my opinion, the usage doesn't justify the efforts.  You'll get used to this and may even find this easier as you start using more.</p>
+
+<p>The following denotes the date and time notations for this script. Mix with the separators for your desired format.</p>
+
+<ul>
+<li>
+<code>y -</code> two digit year</li>
+<li>
+<code>Y -</code> four digit year</li>
+<li>
+<code>m -</code> month number without leading zero</li>
+<li>
+<code>M -</code> month number with leading zero</li>
+<li>
+<code>t -</code> month short text</li>
+<li>
+<code>T -</code> month long text</li>
+<li>
+<code>d -</code> date number without leading zero</li>
+<li>
+<code>D -</code> date number with leading zero </li>
+<li>
+<code>h -</code> hours without leading zero</li>
+<li>
+<code>H -</code> hours with leading zero</li>
+<li>
+<code>a -</code> meridian (am/pm)</li>
+<li>
+<code>A -</code> meridian (AM?PM)</li>
+<li>
+<code>n -</code> minutes without leading zero</li>
+<li>
+<code>N -</code> minutes with leading zero</li>
+<li>
+<code>s -</code> seconds without leading zero</li>
+<li>
+<code>U -</code> unix time </li>
+<li>
+<code>S -</code> seconds with leading zero</li>
+<li>
+<code>w -</code> day of the week short (dayShort)</li>
+<li>
+<code>W -</code> day of the week long</li>
+<li>
+<code>X -</code> military time</li>
+</ul>
+
+<p>Format example
+<code>W, T d, Y H:N:S A</code>     translates to: Sunday, February 1, 1903 23:09:59 </p>
+
 <p>-- More usage examples will be created later -- </p>
 
 <h2>
