@@ -232,6 +232,7 @@ html {
 .jsunpicker .disabled:hover {
     cursor: default;
     background: none;
+    color: red;
 }
 
 input[type=number]::-webkit-inner-spin-button, 
