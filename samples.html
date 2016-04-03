@@ -70,15 +70,20 @@
      <section>
 	<form action = "#" >
 		<div class="jsunsection">
+			<h2><a id="jsunpicker-demo" class="anchor" href="#jsunpicker-demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>jSunPicker Demo</h2>
+			<p>This page shows usage examples, code samples and demo of the project.  This page will be updated with latest update for the project code.</p>
+		</div>
+
+		<div class="jsunsection">
 			<p>
-				<h3>Basic date picker:</h3>
+				<h2>Basic date picker:</h2>
 					Pop-up date picker with default options
 					<p class="code">&lt;input class="datepicker" name="mydate"  placeholder="Click to open picker" /&gt;</p>
 			</p>
 			<input class="datepicker" id="mydate"  name="mydate"  placeholder="Click to open picker" />
 		</div>
 		<div class="jsunsection">
-					<h3>Inline date picker:</h3>
+					<h2>Inline date picker:</h2>
 					Place an inline date picker and tie it to a field.  You can make this field invisible if you just want your users to just interact with the visual calendar.
 					<p class="code"> 
 						&lt;input class="datepicker" data-inline='#inlinepicker' id="inlinedate"  name="inlinedate" placeholder="Select date from picker" /&gt; <br>
@@ -89,7 +94,7 @@
 		</div>
 		<div class="jsunsection">
 			<p>
-				<h3>Local date picker:</h3>
+				<h2>Local date picker:</h2>
 					Day and Month names in French below.  Note that the title names have to be enclosed in double-quotes.  Accented characters are just fine. 
 					Don't forget to set the appropriate format for displayDate.
 					<p class="code">
@@ -105,7 +110,7 @@
 		</div>
 		<div class="jsunsection">
 			<p>
-				<h3>Trigger with icon:</h3>
+				<h2>Trigger with icon:</h2>
 					Initialize the date picker by clicking the icon instead of the field.
 					<p class="code">&lt;input class="datepicker" name="icondate" data-show-icon="images/calendar.ico" placeholder="Click the icon" /&gt;</p>
 			</p>
@@ -113,7 +118,7 @@
 		</div>
 		<div class="jsunsection">
 			<p>
-				<h3>Different start day:</h3>
+				<h2>Different start day:</h2>
 					Start the week on a different day than Sunday.
 					<p class="code">&lt;input class="datepicker" id="startday" name="startday" data-start-day="3" placeholder="I start on Tuesday" /&gt;</p>
 			</p>
@@ -121,7 +126,7 @@
 		</div>
 		<div class="jsunsection">
 			<p>
-				<h3>Different display and output (submit) formats:</h3>
+				<h2>Different display and output (submit) formats:</h2>
 					Set a user-friendly format for displaying the date and a different format for the date submitted (output).
 					<p class="code">&lt;input class="datepicker" id="dispdate"  name="dispdate" data-display-format="T D, Y" data-output-format="Y-M-D" placeholder="I show and submit differently" /&gt;</p>
 			</p>
@@ -130,7 +135,7 @@
 		</div>
 		<div class="jsunsection">
 			<p>
-				<h3>Select the picker type:</h3>
+				<h2>Select the picker type:</h2>
 					Set the picker type to let your users choose date-time, date, month or year.  Don't forget to set the appropriate formats.
 					<p class="code">&lt;input class="datepicker" id="pickertype"  name="pickertype"  data-picker-type="month" data-display-format="M" placeholder="I select Month" /&gt;</p>
 			</p>
@@ -138,7 +143,7 @@
 		</div>
 		<div class="jsunsection">
 			<p>
-				<h3>Disable days:</h3>
+				<h2>Disable days:</h2>
 					Disable some days of the week from being selected.
 					<p class="code">&lt;input class="datepicker" id="disabledays"  name="disabledays"  data-disabled-days="1,7" placeholder="Disabled weekends" /&gt;</p>
 			</p>
@@ -146,7 +151,7 @@
 		</div>
 		<div class="jsunsection">
 			<p>
-				<h3>Disable specific dates or ranges:</h3>
+				<h2>Disable specific dates or ranges:</h2>
 					Disable specific dates or date ranges from being selected.  Dates Apr 5, 2016, dates between Apr 10, 2016 and Apr 15, 2016, dates between Apr 25, 2016 and Apr 27, 2016 are disabled here.
 					<p class="code">&lt;input class="datepicker" id="disabledates"  name="disabledates"  data-disabled-dates="2016/04/05,2016/04/10-2016/04/15,2016/04/25-2016/04/27" placeholder="Disabled dates" /&gt;</p>
 			</p>
@@ -154,7 +159,7 @@
 		</div>
 		<div class="jsunsection">
 			<p>
-				<h3>Set minimum selectable date:</h3>
+				<h2>Set minimum selectable date:</h2>
 					Restrict date selection before a particular date.  Dates before Apr 10, 2016 are disabled here.
 					<p class="code">&lt;input class="datepicker" id="mindate"  name="mindate" data-display-format="D-t-Y" data-min-date="2016/04/10" placeholder="Disabled before Apr 10, 2016" /&gt;</p>
 			</p>
@@ -162,7 +167,7 @@
 		</div>
 		<div class="jsunsection">
 			<p>
-				<h3>Set maximum selectable date:</h3>
+				<h2>Set maximum selectable date:</h2>
 					Restrict date selection after a particular date.  Dates after Apr 25, 2016 are disabled here.
 					<p class="code">&lt;input class="datepicker" id="maxdate"  name="maxdate" data-display-format="D-t-Y" data-max-date="2016/04/25" placeholder="Disabled after Apr 25, 2016" /&gt;</p>
 			</p>
@@ -170,7 +175,7 @@
 		</div>
 		<div class="jsunsection">
 			<p>
-				<h3>Set selectable date range:</h3>
+				<h2>Set selectable date range:</h2>
 					Combine minimum and maximum restrictions to set a selectable date range.  Dates before Apr 10, 2016 and after Apr 25, 2016 are disabled here.
 					<p class="code">&lt;input class="datepicker" id="rangedate"  name="rangedate" data-display-format="D-t-Y" data-min-date="2016/04/10" data-max-date="2016/04/25" placeholder="Selectable date range" /&gt;</p>
 			</p>
@@ -178,7 +183,7 @@
 		</div>
 		<div class="jsunsection">
 			<p>
-				<h3>Set minimum selectable time:</h3>
+				<h2>Set minimum selectable time:</h2>
 					Restrict date selection before a particular time.  Times before 05:00 AM are disabled here.
 					<p class="code">&lt;input class="datepicker" id="mintime"  name="mintime" data-picker-type="time" data-min-time="05:00 AM" placeholder="Disabled before 05:00 AM" /&gt;</p>
 			</p>
@@ -186,7 +191,7 @@
 		</div>
 		<div class="jsunsection">
 			<p>
-				<h3>Set maximum selectable time:</h3>
+				<h2>Set maximum selectable time:</h2>
 					Restrict date selection after a particular time.  Times after 05:00 PM are disabled here.
 					<p class="code">&lt;input class="datepicker" id="maxtime"  name="maxtime"  data-picker-type="time" data-max-time="05:00 PM" placeholder="Disabled after 05:00 PM" /&gt;</p>
 			</p>
@@ -194,7 +199,7 @@
 		</div>
 		<div class="jsunsection">
 			<p>
-				<h3>Set selectable time range:</h3>
+				<h2>Set selectable time range:</h2>
 					Combine minimum and maximum restrictions to set a selectable time range.  Times before 05:00 AM and after 05:00 PM are disabled here.
 					<p class="code">&lt;input class="datepicker" id="rangetime"  name="rangetime"  data-picker-type="time" data-min-time="05:00 AM" data-max-time="05:00 PM" placeholder="Selectable date range" /&gt;</p>
 			</p>
@@ -202,7 +207,7 @@
 		</div>
 		<div class="jsunsection">
 			<p>
-				<h3>Set initial date:</h3>
+				<h2>Set initial date:</h2>
 					Set an initial date for the date picker to select while it loads.
 					<p class="code">&lt;input class="datepicker" id="initdate"  name="initdate"  data-initial-date="2016/04/14" data-display-format="D-t-Y" /&gt;</p>
 			</p>
