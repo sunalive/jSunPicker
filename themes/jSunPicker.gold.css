@@ -1,0 +1,245 @@
+html {
+    font-family: Verdana, Serif, "Times New Roman";
+    font-size: 12px;
+}
+
+.jsunpicker {
+    height: 214px;
+    background: #fff;
+    width: 210px;
+    border: 1px solid #E8C782;
+    margin: 2px;
+    display: none;
+    position: absolute;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    -moz-box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
+	z-index: 1000;
+}
+
+.jsunpicker .day, 
+.jsunpicker .title, 
+.jsunpicker .fav, 
+.jsunpicker .otherday, 
+.jsunpicker .month, 
+.jsunpicker .year {
+    height: 26px;
+    width: 30px;
+    line-height: 26px;
+    float: left;
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.jsunpicker .prevButton, 
+.jsunpicker .nextButton, 
+.jsunpicker .favButton, 
+.jsunpicker .titleButton {
+    height: 13%;
+    width: 16%;
+    font-weight: bold;
+    background: #E8C782;
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+	border-radius: 0;
+    cursor: pointer;
+    text-shadow: 0 1px 0 rgba(255,255,255,.8);
+    -moz-box-shadow: 0 0 1px 1px rgba(255,255,255,.1) inset, 0 1px 0 rgba(255,255,255,.3);
+    -webkit-box-shadow: 0 0 1px 1px rgba(255,255,255,.1) inset, 0 1px 0 rgba(255,255,255,.3);
+    box-shadow: 0 0 1px 1px rgba(255,255,255,.1) inset, 0 1px 0 rgba(255,255,255,.3);
+}
+
+.jsunpicker .prevButton, 
+.jsunpicker .prevButton:hover {
+    border-radius: 10px 0 0 0;
+    width: 30px;
+    float: left;
+}
+
+.jsunpicker .nextButton, 
+.jsunpicker .nextButton:hover {
+    border-radius: 0 10px 0 0;
+    width: 30px;
+    float: right;
+}
+
+.jsunpicker .titleButton {
+    width: 120px;
+    left: 0;
+    right: 0;
+    margin: 0;
+
+}
+
+.jsunpicker .favButton {
+    width: 30px;
+    font-size: 18px;
+    left: 0;
+    right: 0;
+    margin: 0;
+}
+
+.jsunpicker .day {
+    height: 26px;
+    width: 30px;
+    line-height: 26px;
+	font-weight: bold;
+}
+
+.jsunpicker .otherday {
+    color: #000;
+}
+
+.jsunpicker .month {
+    height: 44px;
+    width: 68px;
+    display: table-cell;
+    line-height: 44px;
+    margin: 1px;
+    font-size: 14px;
+}
+
+.jsunpicker .year {
+    height: 35px;
+    width: 50px;
+    line-height: 35px;
+    margin: 1px;
+}
+
+.jsunpicker .time {
+    width: 100%;
+    float: left;
+    display: table-cell;
+    padding-top: 25px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.jsunpicker .time div {
+    position: relative;
+    line-height: 30px;
+    text-align: center;
+    height: 32px;
+    padding: 1px;
+    width: 115px;
+    margin: 5px auto;
+    border: 1px solid #aed7fd;
+}    
+
+.jsunpicker .time input[type=number] {
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+    width: 30px;
+    text-align: center;
+    bottom: 0;
+    border: 0;  /* //1px solid red; */
+}
+
+.jsunpicker .time .error {
+    border: 1px solid #fff;
+    height: 20px;
+    color: red;
+    margin: 0;
+}
+
+.jsunpicker .time button {
+    width: 100px;
+    height: 30px;
+    text-align: center;
+}
+
+.jsunpicker .titleButton:hover, 
+.jsunpicker .favButton:hover, 
+.jsunpicker .prevButton:hover, 
+.jsunpicker .nextButton:hover,
+.jsunpicker button:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#E8C782), to(#F3F781));
+    background-image: -webkit-linear-gradient(top, #E8C782, #F3F781);
+    background-image: -moz-linear-gradient(top, #E8C782, #F3F781);
+    background-image: -ms-linear-gradient(top, #E8C782, #F3F781);
+    background-image: -o-linear-gradient(top, #E8C782, #F3F781);
+    background-image: linear-gradient(top, #E8C782, #F3F781);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#E8C782', EndColorStr='#F3F781');
+}
+
+.jsunpicker button,
+.jsunpicker .titleButton,
+.jsunpicker .favButton,    
+.jsunpicker .prevButton,
+.jsunpicker .nextButton {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#F3F781), to(#E8C782));
+    background-image: -webkit-linear-gradient(top, #F3F781, #E8C782);
+    background-image: -moz-linear-gradient(top, #F3F781, #E8C782);
+    background-image: -ms-linear-gradient(top, #F3F781, #E8C782);
+    background-image: -o-linear-gradient(top, #F3F781, #E8C782);
+    background-image: linear-gradient(top, #F3F781, #E8C782);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#F3F781', EndColorStr='#E8C782');
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.8);
+    -moz-box-shadow: 0 0 1px 1px rgba(0,0,0,.1) inset, 0 1px 0 rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,.1) inset, 0 1px 0 rgba(0,0,0,.3);
+    box-shadow: 0 0 1px 1px rgba(0,0,0,.1) inset, 0 1px 0 rgba(0,0,0,.3);
+}
+
+.jsunpicker button {
+    border-radius: 10px;	
+}
+
+.jsunpicker .day:hover, 
+.jsunpicker .otherday:hover, 
+.jsunpicker .month:hover, 
+.jsunpicker .year:hover {
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #B99543;
+}    
+
+.calendarButton {
+    line-height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 1px;
+    cursor: pointer;
+}
+
+.calendarButton img{
+    width: 23px;
+    height: 23px;
+}
+
+.jsunpicker .selected {
+    background: #886A08;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.jsunpicker .disabled {
+    color: red;
+}
+
+.jsunpicker .disabled:hover {
+    cursor: default;
+    background: none;
+    color: red;
+}
+
+.jsunpicker input[type=number]::-webkit-inner-spin-button, 
+.jsunpicker input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.jsunpicker input[type=number] {
+    -moz-appearance:textfield;
+}
