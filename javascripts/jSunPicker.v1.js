@@ -8,7 +8,7 @@
     function jSunPicker(element, index, opts) {
         this.element = $(element);
         var dataoptions = this.element.data();
-        this.picker = $("<div class='jsunpicker' />");
+        this.picker = $("<div class='sunpicker jsunpicker' />");
 
         // Setting default this.options
         this.options = $.extend({
@@ -50,7 +50,7 @@
         this.pickerInit = this.pickerElement.initElement;
         this.clone = this.pickerElement.clone;
 
-        if (this.options.initialDate !== null) {
+        if (this.options.initialDate !== null && this.options.initialDate !== "") {
             this.initialDate = this.options.initialDate;
             this.select(this.initialDate);
         }
@@ -82,7 +82,7 @@
 
         this.picker.on('click', '.year, .month', $.proxy(function (t) {
             var e = $(t.currentTarget);
-			if(this.options.pickerType == 'datetime'){
+            if(this.options.pickerType == 'datetime' || this.options.pickerType == 'date' ){
 				(e.data('view') && e.data('nav')) ? this.render(e.data('view'), e.data('nav')) : "";
 			}else{
 				if (!e.hasClass('disabled')) {
@@ -194,12 +194,17 @@
         },
         // Calculate position for picker. Returns object for use with css.
         pickerPosition: function () {
-            var pickerInit = this.clone, pickerMargin,		//	(this.options.showIcon) ? $('.calendarButton') : this.element;
-                position = {left: pickerInit.offset().left, top: pickerInit.offset().top}, 
+            var pickerInit = this.clone,
+                pickerMargin,		//	(this.options.showIcon) ? $('.calendarButton') : this.element;
+                position = {
+                    left: pickerInit.offset().left,
+                    top: pickerInit.offset().top
+                }, 
                 pickerHeight = this.picker.outerHeight(),
                 lowerDifference = Math.abs($(window).height() - position.top + pickerInit.outerHeight()),
-                upperDifference = position.top + $(window).scrollTop();
-                (lowerDifference > pickerHeight) ? pickerMargin = {"margin-top":pickerInit.outerHeight()+2} : pickerMargin = {"margin-top":(-1*this.picker.outerHeight())-3};            
+            (lowerDifference > pickerHeight)
+                ? pickerMargin = { "margin-top": pickerInit.height}
+                : pickerMargin = { "margin-top": (-1 * this.picker.outerHeight()) - 4 };
             return pickerMargin;
         },
         // Add leading zeroes
