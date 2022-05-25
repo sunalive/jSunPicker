@@ -14,9 +14,9 @@
         this.options = $.extend({
             language: 'en-US',
 
-			daysTitle: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+	    daysTitle: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
             monthsTitle: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-			dayShort: 2,                // number of characters
+	    dayShort: 2,                // number of characters
             monthShort: 3,              // number of characters
             showIcon: null,             // path/to/calendar/icon, trigger picker on clicking the icon
             inline: null,               // '#element-id',   | jQuery selector for the inline container - be sure to give a unique one
