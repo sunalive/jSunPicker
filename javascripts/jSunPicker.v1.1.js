@@ -203,7 +203,7 @@
                 pickerHeight = this.picker.outerHeight(),
                 lowerDifference = Math.abs($(window).height() - position.top + pickerInit.outerHeight());
             (lowerDifference > pickerHeight) 
-			? pickerMargin = { "margin-top": pickerInit.height + 10 } 
+			? pickerMargin = { "margin-top": pickerInit.height } 
 	    		: pickerMargin = { "margin-top": (-1 * this.picker.outerHeight()) - 4 };
             return pickerMargin;
         },
